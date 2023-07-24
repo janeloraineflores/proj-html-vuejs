@@ -312,11 +312,142 @@
                 </div>
             </div>
         </section>
+
+        <!-- third section main -->
+        <section class="third-section-main py-5 px-5">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-uppercase text-secondary">
+                        Great words about maxcouch
+                    </p>
+                    <h3 class="fw-bold">
+                        Our 
+                        <span class="fw-normal">
+                            top learner's
+                        </span>
+                        verbatim
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-4 bg special">
+                    <h6 class="fw-bold">
+                        It's a choice of quality for people with special needs
+                    </h6>
+                    <p class="py-2">
+                        I'm a very strict person so I require everything to be organized and neat. Then I'll be able to make things right and shine. MaxCouch guys just got me.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <div class="third-image-container me-3">
+                            <img src="../assets/img/testimonial-avata-03.jpg" alt="">
+                        </div>
+                        <h6 class="fw-bold">
+                            FLORENCE THEMES
+                            <br>
+                            <small class="fw-normal text-secondary">
+                               / Multimedia Admin
+                            </small>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-4 bg ">
+                    <h6 class="fw-bold">
+                        High level of efficiency and scientific teaching methods
+                    </h6>
+                    <p class="py-2">
+                        I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like-me.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <div class="third-image-container me-3">
+                            <img src="../assets/img/testimonial-avata-02.jpg" alt="">
+                        </div>
+                        <h6 class="fw-bold">
+                            MINA HOLLACE
+                            <br>
+                            <small class="fw-normal text-secondary">
+                               / Freelancer
+                            </small>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-4 bg special">
+                    <h6 class="fw-bold">
+                        Professional team of specialists and passionate mentors at reach
+                    </h6>
+                    <p class="py-2">
+                        I need to get a certification for English proficiency and MaxCouch is my best choice. Their tutors are smart and professional when dealing with students.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <div class="third-image-container me-3">
+                            <img src="../assets/img/testimonial-avata-01.jpg" alt="">
+                        </div>
+                        <h6 class="fw-bold">
+                            MADLEY PONDOR
+                            <br>
+                            <small class="fw-normal text-secondary">
+                               / IT Specialist
+                            </small>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <span class="dot text-dark">
+                        <i class="bi bi-dot"></i>
+                    </span>
+                    <span class="dot text-secondary ">
+                        <i class="bi bi-dot"></i>
+                        <i class="bi bi-dot"></i>
+                        <i class="bi bi-dot"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h6 class="fw-bold">
+                        Start today for getting
+                        <span class="fw-normal">
+                            Online Certification
+                        </span>
+                    </h6>
+                    <h3 class="fw-bold">
+                        You can be your own guiding star with our help!
+                    </h3>
+                    <button class="px-5 py-2 rounded-2 my-3">
+                        Get started now
+                    </button>
+                </div>
+            </div>
+
+        </section>
         
     </main>
 </template>
 
 <style lang="scss" scoped>
+
+     h2, h3, h4, h5, h6 {
+            color: #3F3A64;
+        }
+
+    span {
+        color:#20ad96
+    }
+
+    button {
+            background-color: #20ad96;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+   
     .first-section-main {
         background-color: #F5F7FA;
 
@@ -344,32 +475,11 @@
             color: #3F3A64;
         }
 
-        button {
-            background-color: #20ad96;
-            color: white;
-            border: none
-        }
 
     }
 
 
     .second-main-section {
-        h3 {
-            color: #3F3A64;
-        }
-
-        span {
-            color:#20ad96
-        }
-
-        h6 {
-            
-            color: #3F3A64;
-        }
-
-        h2 {
-            color: #3F3A64;
-        }
 
         .second-image-container {
             width: 450px;
@@ -383,6 +493,35 @@
 
         a {
             color: #20ad96;
+        }
+    }
+
+
+    .third-section-main {
+        background-color: #F8F8F8;
+
+        .third-image-container {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .bg {
+            background-color: white;
+            padding: 30px;
+        }
+
+        .special {
+            opacity: 0.5;
+        }
+
+        .dot {
+            font-size: 50px;
         }
     }
 </style>

@@ -179,7 +179,8 @@
         button {
             background-color: #20ad96;
             color: white;
-            border: none
+            border: none;
+            font-weight: bold;
         }
 
         span a{

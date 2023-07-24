@@ -21,9 +21,11 @@
 </script>
 
 <template>
-  <h1 class="text-danger">
-    HELLO WORLD!
-  </h1>
+  <HeaderComponent />
+
+  <MainComponent/>
+
+  <FooterComponent />
 </template>
 
 <style lang="scss">

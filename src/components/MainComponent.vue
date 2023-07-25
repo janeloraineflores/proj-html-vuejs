@@ -562,22 +562,6 @@
 </template>
 
 <style lang="scss" scoped>
-
-     h2, h3, h4, h5, h6 {
-            color: #3F3A64;
-        }
-
-    span {
-        color:#20ad96
-    }
-
-    button {
-            background-color: #20ad96;
-            color: white;
-            border: none;
-            font-weight: bold;
-        }
-
    
     .first-section-main {
         background-color: #F5F7FA;

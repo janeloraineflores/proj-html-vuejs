@@ -83,7 +83,7 @@
 
                         <button class="px-4 py-2 rounded-2 my-3">
                             <i class="bi bi-printer"></i> 
-                            <span class="ms-2">
+                            <span class="ms-2 text-light">
                                 Download free guide
                             </span>
                         </button>
@@ -174,13 +174,6 @@
 
         h1 {
             color: #3F3A64;
-        }
-
-        button {
-            background-color: #20ad96;
-            color: white;
-            border: none;
-            font-weight: bold;
         }
 
         span a{

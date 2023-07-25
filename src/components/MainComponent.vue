@@ -426,6 +426,61 @@
             </div>
 
         </section>
+
+        <!-- fourth section main -->
+        <section class="fourth-section-main">
+            <div class="my-container">
+                <div class="row">
+                    <div class="col-3 text-center border-start py-5">
+                        <h6 class="fw-bold">
+                            Succesfully Trained
+                        </h6>
+                        <h2 class="fw-bold my-2">
+                            1790
+                        </h2>
+                        <small class="text-uppercase text-secondary">
+                            Enrolled Learners
+                        </small>
+                    </div>
+
+                    <div class="col-3 text-center border-start py-5">
+                        <h6 class="fw-bold">
+                            Proudly Received
+                        </h6>
+                        <h2 class="fw-bold my-2">
+                            19
+                        </h2>
+                        <small class="text-uppercase text-secondary">
+                            Countryward Awards
+                        </small>
+                    </div>
+
+                    <div class="col-3 text-center border-start py-5">
+                        <h6 class="fw-bold">
+                            Firmly Established
+                        </h6>
+                        <h2 class="fw-bold my-2">
+                            24
+                        </h2>
+                        <small class="text-uppercase text-secondary">
+                            Local Branches
+                        </small>
+                    </div>
+
+                    <div class="col-3 text-center border-start border-end py-5">
+                        <h6 class="fw-bold">
+                            Getting Featured on
+                        </h6>
+                        <h2 class="fw-bold my-2">
+                            1090
+                        </h2>
+                        <small class="text-uppercase text-secondary">
+                            Blog Posts
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
 </template>
@@ -522,6 +577,12 @@
 
         .dot {
             font-size: 50px;
+        }
+    }
+
+    .fourth-section-main {
+        h2 {
+            color: #20ad96;
         }
     }
 </style>

@@ -481,6 +481,82 @@
                 </div>
             </div>
         </section>
+
+        <!-- fifth section main -->
+        <section class="fifth-section-main">
+            <div class="my-container">
+                <div class="row">
+                    <div class="col-4 ">
+                        <small class="text-uppercase text-secondary">
+                            Enjoyable Insights
+                        </small>
+                        <h3 class="fw-bold my-3">
+                            Most Viewed 
+                            <span>
+                                Best Blogs
+                            </span>
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-arrow-right"></i> Become a Better Blogger: Content Planning
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i> Promoting Your Online Business on Pinterest
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i> Gamification and Game-Based on Learning
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i> Designing an Online Course from Expert
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i> Why Online Courses Are The Future of Education
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3 bg mx-3 ">
+                        <div class="fifth-image-container">
+                            <img src="../assets/img/artist-blog-03-480x352.jpeg" alt="">
+                        </div>
+                        <div class="my-2 ">
+                            <small class="text-uppercase text-secondary">
+                                Artist
+                            </small>
+                            <h6 class="fw-bold my-2">
+                                Brush Strokes Energize Trees in Paintings
+                            </h6>
+                            <small class="text-secondary">
+                                <i class="bi bi-calendar"></i> May 15, 2020
+                                <span class="text-secondary">
+                                    <i class="bi bi-eye"></i> 688 views
+                                </span>
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="col-3  bg ">
+                        <div class="fifth-image-container">
+                            <img src="../assets/img/artist-blog-01-480x352.jpg" alt="">
+                        </div>
+                        <div class="my-2 ">
+                            <small class="text-uppercase text-secondary">
+                                Artist
+                            </small>
+                            <h6 class="fw-bold my-2">
+                                Brush Strokes Energize Trees in Paintings
+                            </h6>
+                            <small class="text-secondary">
+                                <i class="bi bi-calendar"></i> May 15, 2020
+                                <span class="text-secondary">
+                                    <i class="bi bi-eye"></i> 688 views
+                                </span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
 </template>
@@ -584,5 +660,39 @@
         h2 {
             color: #20ad96;
         }
+    }
+
+    .fifth-section-main {
+        padding: 100px 0;
+        background-color: #F5F1ED;
+        height: 500px;
+
+        li {
+            font-size: 13px;
+            color: #3F3A64;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .fifth-image-container {
+            width: 100%;
+            height: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .bg {
+            width: 300px;
+            background-color: white;
+        }
+
+       
+       
+
+       
+     
     }
 </style>

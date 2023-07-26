@@ -6,21 +6,21 @@
             return {
                cards: [
                     {
-                        img: '../assets/img/home-2-image-box-01.png',
+                        img: 'home-2-image-box-01',
                         title: 'Customize Preferences',
                         text: ' Learners are given the right to arrange and customize their study schedule and timetable based on preferences.',
                         button: 'Start here'
                     },
 
                     {
-                        img: '../assets/img/about-us-02-image-box-02.png',
+                        img: 'about-us-02-image-box-02',
                         title: 'Cloud Storage',
                         text: ' You can store online lessons via online cloud or download to your device and revise lessons.',
                         button: 'Get Free Quote'
                     },
 
                     {
-                        img: '../assets/img/home-2-image-box-03.png',
+                        img: 'home-2-image-box-03',
                         title: 'Multimefdia Channels',
                         text: ' We provide study materials with various formats: video, audio, slides, doc, prints, books and applications.',
                         button: 'Start now'
@@ -32,7 +32,10 @@
             }
         },
         methods: {
-
+            getImgUrl(image) {
+                return `src/assets/img/${image}.png`
+                
+            }
         }
     }
 </script>
@@ -61,7 +64,7 @@
             <div class="row mt-5">
                 <div class="col-4" v-for="(singleCard, index) in cards" :key="index">
                     <div>
-                        <img :src="singleCard.img" alt="">
+                        <img :src="getImgUrl(singleCard.img)" alt="">
                     </div>
                     <h6 class="fw-bold mt-4">
                         {{singleCard.title}}
@@ -78,6 +81,9 @@
 
             <div class="row mt-5 pt-5">
                 <div class="col-7">
+                    <img class="logo02" src="../assets/img/maxcoach-shape-02.png" alt="">
+                    <img class="logo05" src="../assets/img/maxcoach-shape-05.png" alt="">
+                    <img class="logo07" src="../assets/img/maxcoach-shape-07.png" alt="">
                     <div class="second-image-container">
                         <img src="../assets/img/home-2-popup-video-poster.jpg" alt="">
                     </div>
@@ -154,6 +160,24 @@
 
         .hover:hover {
             color: #20ad96;
+        }
+
+        .logo05{ 
+            position: absolute;
+            top: 2200px;
+            left: 200px;
+        }
+
+        .logo07 {
+            position: absolute;
+            top: 2410px;
+            left: 600px;
+        }
+
+        .logo02 {
+            position: absolute;
+            top: 2200px;
+            left: 700px;
         }
 
     }

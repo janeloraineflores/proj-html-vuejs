@@ -6,42 +6,42 @@
             return {
                 cards: [
                     {
-                        img: '../assets/img/course-02-480x298.jpg',
+                        img: 'course-02-480x298',
                       price: '$40.00'  ,
                       title: 'Learning to write as a Professional Author',
                       lessons: 20,
                       students: 50
                     },
                     {
-                        img: '../assets/img/stock-full-hd-03-480x298.jpg',
+                        img: 'stock-full-hd-03-480x298',
                       price: 'Free'  ,
                       title: 'Customer-centric Info-Tech Strategies',
                       lessons: 24,
                       students: 769
                     },
                     {
-                        img: '../assets/img/stock-full-hd-04-480x298.jpg',
+                        img: 'stock-full-hd-04-480x298',
                       price: '$19,00'  ,
                       title: 'Open Programming Courses for Everyone: Phyton',
                       lessons: 17,
                       students: 62
                     },
                     {
-                        img: '../assets/img/stock-full-hd-06-480x298.jpg',
+                        img: 'stock-full-hd-06-480x298',
                       price: '$26.00'  ,
                       title: ' Academic Listening and Note-taking',
                       lessons: 14,
                       students: 67
                     },
                     {
-                        img: '../assets/img/course-featured-image-01-480x298.jpg',
+                        img: 'course-featured-image-01-480x298',
                       price: '$39.00'  ,
                       title: '  Master JQuery in a Short Period of  Time',
                       lessons: 6,
                       students: 51
                     },
                     {
-                        img: '../assets/img/stock-full-hd-05-480x298.jpg',
+                        img: 'stock-full-hd-05-480x298',
                       price: '$59.00'  ,
                       title: ' Introduction to Javascripts for Beginners',
                       lessons: 14,
@@ -52,6 +52,12 @@
         },
         methods: {
 
+                getImgUrl(image) {
+                return `src/assets/img/${image}.jpg`
+                
+            }
+
+            
         }
     }
 </script>
@@ -59,7 +65,7 @@
 <template>
     
     <!-- first section main -->
-    <section class="first-section-main pt-5">
+    <section class="first-section-main py-5">
         <div class="my-container">
 
             <div class="row pb-5">
@@ -77,8 +83,8 @@
             <div class="row">
                 <div class="col-6 my-col" v-for="(singleCard, index) in cards" :key="index">
                     <div class="d-flex align-items-center">
-                        <div class="first-image-container me-3">
-                            <img :src="singleCard.img" alt="">
+                        <div class="first-image-container p-3">
+                            <img :src="getImgUrl(singleCard.img)" alt="">
                         </div>
 
                         <div>
@@ -104,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row my-4">
                 <div class="col text-center">
                     <button class="px-4 py-2 rounded-2 my-3">
                         View all courses <i class="bi bi-arrow-right"></i> 

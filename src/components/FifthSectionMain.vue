@@ -14,14 +14,14 @@
 
                cards: [
                      {
-                        img: '../assets/img/artist-blog-03-480x352.jpeg',
+                        img: 'artist-blog-03-480x352.jpeg',
                         profession: 'Artist',
                         title: 'Brush Strokes Energize Trees in Paintings',
                         date: 'May 15, 2020',
                         views: 688
                      },
                      {
-                        img: '../assets/img/artist-blog-01-480x352.jpg',
+                        img: 'artist-blog-01-480x352.jpg',
                         profession: 'Artist',
                         title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
                         date:'May 15, 2020',
@@ -33,7 +33,10 @@
             }
         },
         methods: {
-
+            getImgUrl(image) {
+                return `src/assets/img/${image}`
+                
+            }
         }
     }
 </script>
@@ -62,11 +65,11 @@
                         </ul>
                     </div>
 
-                    <div class="col-3 bg mx-3" v-for="(singlecard, index) in cards" :key="index">
+                    <div class="col-3 bg ms-3" v-for="(singlecard, index) in cards" :key="index">
                         <div class="fifth-image-container">
-                            <img :src="singlecard.img" alt="">
+                            <img :src="getImgUrl(singlecard.img)" alt="">
                         </div>
-                        <div class="my-2 ">
+                        <div class="my-2">
                             <small class="text-uppercase text-secondary">
                                 {{ singlecard.profession }}
                             </small>
@@ -104,6 +107,7 @@
         .fifth-image-container {
             width: 100%;
             height: 50%;
+            display: inline-block;
 
             img {
                 width: 100%;
@@ -113,8 +117,8 @@
         }
 
         .bg {
-            width: 300px;
             background-color: white;
+            width: 300px;
         }
 
         

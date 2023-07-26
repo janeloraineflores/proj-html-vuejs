@@ -8,7 +8,7 @@
                     {
                         title: " It's a choice of quality for people with special needs",
                         text: "I'm a very strict person so I require everything to be organized and neat. Then I'll be able to make things right and shine. MaxCouch guys just got me.",
-                        img: '../assets/img/testimonial-avata-03.jpg',
+                        img: 'testimonial-avata-03',
                         name: 'FLORENCE THEMES',
                         profession: '/ Multimedia Admin'
                     },
@@ -16,14 +16,14 @@
                     {
                         title: " High level of efficiency and scientific teaching methods",
                         text: " I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like-me.",
-                        img: '../assets/img/testimonial-avata-02.jpg',
+                        img: 'testimonial-avata-02',
                         name: 'MINA HOLLACE',
                         profession: '/ Freelancer'
                     },
                     {
                         title: " Professional team of specialists and passionate mentors at reach",
                         text: " I need to get a certification for English proficiency and MaxCouch is my best choice. Their tutors are smart and professional when dealing with students.",
-                        img: '../assets/img/testimonial-avata-01.jpg',
+                        img: 'testimonial-avata-01',
                         name: ' MADLEY PONDOR',
                         profession: ' / IT Specialist'
                     }
@@ -31,7 +31,10 @@
             }
         },
         methods: {
-
+            getImgUrl(image) {
+                return `src/assets/img/${image}.jpg`
+                
+            }
         }
     }
 </script>
@@ -66,7 +69,7 @@
                     </p>
                     <div class="d-flex align-items-center">
                         <div class="third-image-container me-3">
-                            <img :src="singleCard.img" alt="">
+                            <img :src="getImgUrl(singleCard.img)" alt="">
                         </div>
                         <h6 class="fw-bold">
                             {{singleCard.name}}

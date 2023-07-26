@@ -5,17 +5,21 @@
         data() {
             return {
                images: [
-                    {image: "..assets/img/client-logo-01.png"},
-                    {image: "..assets/img/client-logo-02.png"},
-                    {image: "..assets/img/client-logo-03.png"},
-                    {image: "..assets/img/client-logo-04.png"},
-                    {image: "..assets/img/client-logo-05.png"},
-                    {image: "..assets/img/client-logo-06.png"},
-                    {image: "..assets/img/client-logo-07.png"},
+                    {image: "client-logo-01"},
+                    {image: "client-logo-02"},
+                    {image: "client-logo-03"},
+                    {image: "client-logo-04"},
+                    {image: "client-logo-05"},
+                    {image: "client-logo-06"},
+                    {image: "client-logo-07"},
                ]
             }
         },
         methods: {
+
+            getImgUrl(image) {
+                return `src/assets/img/${image}.png`
+            }
 
         }
     }
@@ -44,7 +48,7 @@
                         <div class="text-secondary">
                             Have questions?
                             <span>
-                               <a href="#">
+                               <a href="#" class="fw-bold">
                                     Get Free Sample 
                                     <i class="bi bi-arrow-right"></i>
                                </a>
@@ -62,8 +66,8 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="header-bottom-logo-container" v-for="(Singleimage, index) in images" :key="index">
-                        <img :src= "Singleimage.image">
+                    <div class="header-bottom-logo-container pe-5" v-for="(Singleimage, index) in images" :key="index">
+                        <img :src= "getImgUrl(Singleimage.image)">
                     </div>
                 </div>
             </div>

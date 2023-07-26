@@ -1,34 +1,10 @@
 <script>
-   
+   import { store } from '../store.js';
     export default {
         name: "SecondSectionMain",
         data() {
             return {
-               cards: [
-                    {
-                        img: 'home-2-image-box-01',
-                        title: 'Customize Preferences',
-                        text: ' Learners are given the right to arrange and customize their study schedule and timetable based on preferences.',
-                        button: 'Start here'
-                    },
-
-                    {
-                        img: 'about-us-02-image-box-02',
-                        title: 'Cloud Storage',
-                        text: ' You can store online lessons via online cloud or download to your device and revise lessons.',
-                        button: 'Get Free Quote'
-                    },
-
-                    {
-                        img: 'home-2-image-box-03',
-                        title: 'Multimefdia Channels',
-                        text: ' We provide study materials with various formats: video, audio, slides, doc, prints, books and applications.',
-                        button: 'Start now'
-                    },
-
-                    
-
-               ]
+              store
             }
         },
         methods: {
@@ -62,7 +38,7 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-4" v-for="(singleCard, index) in cards" :key="index">
+                <div class="col-4" v-for="(singleCard, index) in store.availableCoursescards" :key="index">
                     <div>
                         <img :src="getImgUrl(singleCard.img)" alt="">
                     </div>

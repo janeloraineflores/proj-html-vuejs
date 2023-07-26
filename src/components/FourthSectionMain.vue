@@ -1,31 +1,10 @@
 <script>
-   
+   import { store } from '../store.js';
     export default {
         name: "FourthSectionMain",
         data() {
             return {
-               cards: [
-                    {
-                        title: 'Succesfully Trained',
-                        number: '1790',
-                        text: 'Enrolled Learners',
-                    },
-                    {
-                        title: 'Proudly Received',
-                        number: '19',
-                        text: 'Countryward Awards',
-                    },
-                    {
-                        title: 'Firmly Established',
-                        number: '24',
-                        text: 'Local Branches',
-                    },
-                    {
-                        title: 'Getting Featured on',
-                        number: '1090',
-                        text: 'Blog Posts',
-                    },
-               ]
+                store
             }
         },
         methods: {
@@ -41,7 +20,7 @@
             <div class="my-container">
 
                 <div class="row">
-                    <div class="col-3 text-center border-start border-end py-5" v-for="(singlecard, index) in cards" :key="index">
+                    <div class="col-3 text-center border-start border-end py-5" v-for="(singlecard, index) in store.cards" :key="index">
                         <h6 class="fw-bold">
                            {{singlecard.title}}
                         </h6>

@@ -1,18 +1,11 @@
 <script>
-   
+   import { store } from '../store.js';
     export default {
         name: "HeaderTopComponent",
         data() {
             return {
-               navs : [
-                    {nav: 'Home'},
-                    {nav: 'Pages'},
-                    {nav: 'Courses'},
-                    {nav: 'Features'},
-                    {nav: 'Blog'},
-                    {nav: 'Shop'},
-                    
-               ]
+                store
+           
             }
         },
         methods: {
@@ -30,9 +23,9 @@
             </div>
             
             <ul >
-                <li class="d-inline-block ms-3" v-for="(singlenav, index) in navs" :key="index">
+                <li class="d-inline-block ms-3" v-for="(singlenav, index) in store.navs" :key="index">
                     <a href="#" class="text-decoration-none ">
-                        {{ singlenav.nav }}
+                        {{ singlenav }}
                         <span class="chevron">
                             <i class="bi bi-chevron-down"></i>
                         </span>

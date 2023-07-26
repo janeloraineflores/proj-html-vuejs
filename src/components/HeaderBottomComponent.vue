@@ -1,18 +1,10 @@
 <script>
-   
+    import { store } from '../store.js';
     export default {
         name: "HeaderBottomComponent.vue",
         data() {
             return {
-               images: [
-                    {image: "client-logo-01"},
-                    {image: "client-logo-02"},
-                    {image: "client-logo-03"},
-                    {image: "client-logo-04"},
-                    {image: "client-logo-05"},
-                    {image: "client-logo-06"},
-                    {image: "client-logo-07"},
-               ]
+                store
             }
         },
         methods: {
@@ -66,8 +58,8 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="header-bottom-logo-container pe-5" v-for="(Singleimage, index) in images" :key="index">
-                        <img :src= "getImgUrl(Singleimage.image)">
+                    <div class="header-bottom-logo-container pe-5" v-for="(Singleimage, index) in store.images" :key="index">
+                        <img :src= "getImgUrl(Singleimage)">
                     </div>
                 </div>
             </div>

@@ -75,7 +75,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6" v-for="(singleCard, index) in cards" :key="index">
+                <div class="col-6 my-col" v-for="(singleCard, index) in cards" :key="index">
                     <div class="d-flex align-items-center">
                         <div class="first-image-container me-3">
                             <img :src="singleCard.img" alt="">
@@ -101,6 +101,14 @@
                             </small>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <button class="px-4 py-2 rounded-2 my-3">
+                        View all courses <i class="bi bi-arrow-right"></i> 
+                    </button>
                 </div>
             </div>
             
@@ -137,6 +145,10 @@
             color: #3F3A64;
         }
 
+        .my-col:hover {
+            background-color: white;
+            cursor: pointer;
+        }
 
     }
 </style>

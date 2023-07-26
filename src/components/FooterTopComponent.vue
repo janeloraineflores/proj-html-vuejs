@@ -58,7 +58,8 @@
             border: none;
         }
         .spaninput {
-            background-color: #20ad96;;
+            background-color: #20ad96;
+            cursor: pointer;
         }
 
         .logo01 {

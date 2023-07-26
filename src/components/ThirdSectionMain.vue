@@ -140,6 +140,7 @@
         }
         .dot {
             font-size: 50px;
+            cursor: pointer;
         }
 
         .logo01 {

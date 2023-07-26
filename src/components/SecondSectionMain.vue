@@ -69,7 +69,7 @@
                     <p class="text-secondary">
                         {{ singleCard.text }}
                     </p>
-                    <a href="#" class="text-decoration-none text-secondary fw-bold">
+                    <a href="#" class="text-decoration-none hover fw-bold">
                         {{ singleCard.button }} <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
@@ -146,6 +146,14 @@
                 height: 100%;
             
             }
+        }
+
+        .hover{
+            color: rgba(0, 0, 0, 0.359);
+        }
+
+        .hover:hover {
+            color: #20ad96;
         }
 
     }

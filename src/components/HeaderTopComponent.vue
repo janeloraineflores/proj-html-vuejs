@@ -31,7 +31,7 @@
             
             <ul >
                 <li class="d-inline-block ms-3" v-for="(singlenav, index) in navs" :key="index">
-                    <a href="#" class="text-decoration-none text-dark ">
+                    <a href="#" class="text-decoration-none ">
                         {{ singlenav.nav }}
                         <span class="chevron">
                             <i class="bi bi-chevron-down"></i>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="#" class="text-decoration-none">
                         <i class="bi bi-person-circle"></i>
                     </a>
                 </li>
@@ -80,6 +80,15 @@
         .magnifying-glass {
             position: relative;
             right: 25px;
+        }
+
+        a{
+            color: black;
+        }
+
+        a:hover{
+            color: #20ad96;
+            font-weight: bold;
         }
 
     }

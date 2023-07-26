@@ -62,7 +62,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-3 bg mx-3 " v-for="(singlecard, index) in cards" :key="index">
+                    <div class="col-3 bg mx-3" v-for="(singlecard, index) in cards" :key="index">
                         <div class="fifth-image-container">
                             <img :src="singlecard.img" alt="">
                         </div>
@@ -116,6 +116,8 @@
             width: 300px;
             background-color: white;
         }
+
+        
     }
 
 </style>

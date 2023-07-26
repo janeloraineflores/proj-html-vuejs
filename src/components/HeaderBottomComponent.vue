@@ -38,9 +38,7 @@
 
                         <button class="px-4 py-2 rounded-2 my-3">
                             <i class="bi bi-printer"></i> 
-                            <span class="ms-2 text-light">
-                                Download free guide
-                            </span>
+                             Download free guide
                         </button>
                         
                         <div class="text-secondary">
@@ -117,6 +115,7 @@
         bottom: 50px;
         left: 200px;
        }
+
     }
     
 </style>

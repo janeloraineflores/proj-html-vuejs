@@ -56,17 +56,17 @@
                             <div class="col-6">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" class="prova">
                                             Start here
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" >
                                             Blog 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" >
                                             About Us
                                         </a>
                                     </li>
@@ -76,17 +76,17 @@
                             <div class="col-6">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" >
                                             Success story
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" >
                                             Courses 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-secondary">
+                                        <a href="#" >
                                             Contact Us
                                         </a>
                                     </li>
@@ -101,22 +101,22 @@
                         </h6>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#" class="text-secondary">
+                                <a href="#">
                                      Membership
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-secondary">
+                                <a href="#">
                                     Purchase Guide 
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-secondary">
+                                <a href="#">
                                     Privacy Policy
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-secondary">
+                                <a href="#">
                                     Terms of services
                                 </a>
                             </li>
@@ -145,11 +145,22 @@
             color: rgba(0, 0, 0, 0.249);
             margin-right: 20px;
             font-size: 20px;
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: #20ad96;
         }
 
         a{ 
             text-decoration: none;
+            color: rgba(0, 0, 0, 0.499);
             
+        }
+
+        a:hover {
+            color:#20ad96;
+            font-weight: bold;
         }
 
     }

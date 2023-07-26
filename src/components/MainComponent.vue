@@ -286,6 +286,9 @@
                         <div class="second-image-container">
                             <img src="../assets/img/home-2-popup-video-poster.jpg" alt="">
                         </div>
+                        <div class="youtube-container">
+                            <img src="../assets/img/icon-youtube-play.png" alt="">
+                        </div>
                     </div>
 
                     <div class="col-5">
@@ -409,7 +412,10 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col text-center">
+                <div class="col-3">
+                    <img class="logo01" src="../assets/img/maxcoach-shape-01.png" alt="">
+                </div>
+                <div class="col-6 text-center">
                     <h6 class="fw-bold">
                         Start today for getting
                         <span class="fw-normal">
@@ -422,6 +428,9 @@
                     <button class="px-5 py-2 rounded-2 my-3">
                         Get started now
                     </button>
+                </div>
+                <div class="col-3">
+                    <img src="../assets/img/maxcoach-shape-02.png" alt="">
                 </div>
             </div>
 
@@ -599,6 +608,7 @@
         .second-image-container {
             width: 450px;
             height: 300px;
+            position: absolute;
 
             img {
                 width: 100%;
@@ -609,6 +619,23 @@
         a {
             color: #20ad96;
         }
+
+        .youtube-container {
+            width: 50px;
+            height: 40px;
+            position: relative;
+            top: 140px;
+            left: 210px;
+            
+           
+
+            img{
+                width: 100%;
+                height: 100%;
+               
+            }
+        }
+
     }
 
 
@@ -637,6 +664,12 @@
 
         .dot {
             font-size: 50px;
+        }
+
+        .logo01 {
+            position: relative;
+            left: 150px;
+            top: 50px;
         }
     }
 

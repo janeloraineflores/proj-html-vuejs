@@ -4,7 +4,15 @@
         name: "HeaderTopComponent",
         data() {
             return {
-               
+               navs : [
+                    {nav: 'Home'},
+                    {nav: 'Pages'},
+                    {nav: 'Courses'},
+                    {nav: 'Features'},
+                    {nav: 'Blog'},
+                    {nav: 'Shop'},
+                    
+               ]
             }
         },
         methods: {
@@ -22,49 +30,9 @@
             </div>
             
             <ul >
-                <li class="d-inline-block ms-3">
+                <li class="d-inline-block ms-3" v-for="(singlenav, index) in navs" :key="index">
                     <a href="#" class="text-decoration-none text-dark ">
-                        Home 
-                        <span class="chevron">
-                            <i class="bi bi-chevron-down"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
-                        Pages
-                        <span class="chevron">
-                            <i class="bi bi-chevron-down"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
-                        Courses
-                        <span class="chevron">
-                            <i class="bi bi-chevron-down"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
-                        Features
-                        <span class="chevron">
-                            <i class="bi bi-chevron-down"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
-                        Blog
-                        <span class="chevron">
-                            <i class="bi bi-chevron-down"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="d-inline-block ms-3">
-                    <a href="#" class="text-decoration-none text-dark">
-                        Shop
+                        {{ singlenav.nav }}
                         <span class="chevron">
                             <i class="bi bi-chevron-down"></i>
                         </span>
